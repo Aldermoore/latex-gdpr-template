@@ -1,0 +1,274 @@
+% Dette dokument er en Latex implementering af GDPR-samtykke blanketten
+% Aarhus Universitet tilbyder til projekter der inkluderer brugerundersøgelser el.lign. 
+
+% Latex skal muligvis kompilerer TO gange for at f.eks. sidetal bliver opsat korrekt ! 
+
+\documentclass[11pt, a4paper]{article}
+
+
+%% Udfyld de nedenstående variabler med den relevante information. Latex vil selv sætte dem ind de rigtige steder, og tilpasse siden så det passer. 
+
+
+\newcommand{\opgavetitel}{ Opgavetitel }	 		% Skriv navn på opgaven
+
+\newcommand{\studerendeET}{ studerende 1 }	 		% Skriv navn 
+
+\newcommand{\studerendeTO}{ studerende 2 }	 		% Skriv navn 
+
+\newcommand{\studerendeTRE}{ studerende 3 }	 		% Skriv navn 
+
+\newcommand{\studerendeFIRE}{ studerende 4 }	 	% Skriv navn 
+
+\newcommand{\institution}{Aarhus Universitet} % Ændr institution til det passende
+
+
+
+
+
+
+
+
+%%%%% Nedenfor skal der kun rettes i tabellen over ansvar) %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Imports
+\usepackage{geometry}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} 
+\usepackage[danish]{babel} % Ændrer sproget til dansk, f.eks for indholdsfortegnelsen
+\usepackage{microtype}  % Typografisk magi! Giver bl.a. pænere orddeling
+\renewcommand{\danishhyphenmins}{22}  % Bedre dansk orddeling
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{libertine}            % Linux Libertine as text font
+
+%Settings for the page layout
+\setlength{\parindent}{0cm}
+\geometry{
+a4paper,
+left = 2cm, 
+right = 5.5cm,  
+top = 1in, 
+bottom = 3.6cm, 
+}
+
+% Header
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{48.14pt} 
+\fancyhf{}
+\fancyhead[RO]{\makebox[0pt][l]{\makebox[4cm][r]{
+\textsf{
+\begin{tabular}{l}
+\textbf{\institution}      \\
+\footnotesize{Dato: \today}             \\
+\vspace{2mm} \\
+\footnotesize{Side \thepage/\pageref{LastPage}}\\
+~~
+\end{tabular}
+}}}}
+
+
+
+
+
+
+\begin{document}
+\pagestyle{fancy}
+~
+\vspace{1cm}
+
+\textbf{Aftale om fælles dataansvar for personoplysninger indsamlet til brug for}~\\
+
+
+
+\opgavetitel
+\hrule
+\vspace{2mm}
+(Title på opgave/projekt/speciale)
+
+\vspace{5mm}
+
+
+Mellem\\ 
+
+Navn på studerende 1: ~~~\studerendeET
+\vspace{1mm}
+\hrule
+
+\vspace{5mm}
+
+og 
+\vspace{5mm}
+
+Navn på studerende 1: ~~~\studerendeTO
+\vspace{1mm}
+\hrule
+
+\vspace{5mm}
+
+og 
+\vspace{5mm}
+
+Navn på studerende 3: ~~~\studerendeTRE
+\vspace{1mm}
+\hrule
+
+\vspace{5mm}
+
+og 
+\vspace{5mm}
+
+Navn på studerende 3: ~~~\studerendeFIRE
+\vspace{1mm}
+\hrule
+
+\vspace{5mm}
+
+
+% Hvis flere end to studerende – indsæt da disse ved at rette i skabelonen. 
+
+\newpage
+\subsection*{1. Fælles dataansvar}
+
+1.1 Denne aftale fastsætter ansvarsfordelingen mellem Studerende 1 og Studerende 2 i for- bindelse behandling af persondata til brug for aflevering af ovennævnte opgave / projekt eller speciale som led i en uddannelse på Aarhus Universitet.\\
+
+1.2 Der er mellem Studerende 1 og Studerende 2 enighed om, at der i forbindelse med op- gaven/projektet/specialet foreligger et fælles dataansvar.
+
+\subsection*{2. Overordnet opgavefordeling}
+
+2.1 Parterne udfører følgende opgaver: 
+
+
+\begin{table}[]
+\begin{tabular}{ | p{0.3\textwidth} | l | l | l |}
+\hline	
+                                                                                                      & studerende 1 & studerende 2 & Studerende 3 & Studerende 4 	\\ \hline
+Indhentelse af samtykkeerklæringer fra deltagerne                                                     &       x       &              & 			   & 				\\ \hline
+Udlevere kopi af samtykkeerklæring til deltager                                                       &       x       &              & 			   & 				\\ \hline
+Udarbejdelse af fortegnelse over behandlingsaktiviteter                                               &       x       &              & 				& 				\\ \hline
+Opbevaring af personoplysninger og herunder samtykkeerklæringer                                       &       x       &              & 				& 				\\ \hline
+Indberetning af eventuelle sikkerhedsbrud til Datatilsynet og herefter orientering til databrud@au.dk &       x       &              & 				& 				\\ \hline
+Besvarelse af henvendelser fra deltagerne                                                             &       x       &              & 				& 				\\ \hline
+Sletning af personoplysninger når opgaven/projektet/specialet er bedømt og klagefristen er udløbet    &       x       &              & 	           & 				\\ \hline
+\end{tabular}%
+\end{table}
+
+\subsection*{3. Principper og behandlingshjemmel} 
+
+3.1 Til brug for opgaven / projektet / specialet behandles personoplysninger indhentet fra personer, som har givet samtykke til behandlingen. Almindelige personoplysninger behandles efter bestemmelsen i persondataforordningens artikel 6, stk. 1, litra a) og følsomme personoplysninger behandles efter bestemmelsen i persondataforordningens artikel 9, stk. 2, litra a).\\
+
+3.2 Studerende 1 og Studerende 2 er hver især ansvarlige for at overholde principperne for behandling af personoplysninger, i det omfang at reglerne finder anvendelse på den pågældendes ansvarsområder ifølge denne aftale.
+
+
+\subsection*{4. De registreredes rettigheder}
+
+4.1 Begge parter er ansvarlig for sikringen af de registreredes rettigheder gennem iagttagelse af nedenstående regler i databeskyttelsesforordningen:
+\begin{itemize}
+	\item den registreredes indsigtsret,
+	\item ret til berigtigelse,
+	\item ret til sletning (retten til at blive glemt), og
+	\item ret til begrænsning af behandling.
+\end{itemize}
+
+Begge parter er ansvarlige for at udlevere en kopi af den underskrevne samtykkeblanket til de registrerede personer. Blanketten indeholder de oplysninger om databehandlingen, som er omhandlet i persondataforordningens artikel 13 om oplysningspligt ved indsamling af personoplysninger hos den registrerede.\\
+
+Begge parter er ansvarlige for at underrette eventuelle modtagere af oplysningerne, hvis en oplysning er blevet berigtiget, begrænset eller slettet.\\
+
+4.2 Parterne er ansvarlige for at bistå hinanden i det omfang, at dette er relevant og nødvendigt for, at begge parter kan efterleve forpligtelserne over for de registrerede.
+
+\subsection*{5. Behandlingssikkerhed og dokumentation for overholdelse af databeskyttelsesforordningen}
+
+5.1 Begge parter er ansvarlige for at overholde kravet i databeskyttelsesforordningens artikel 32 om behandlingssikkerhed.
+
+\subsection*{6. Fortegnelse}
+
+6.1 Der skal udarbejdes en fortegnelse.
+
+\subsection*{7. Håndtering af brud på persondatasikkerheden}
+
+7.1 Begge parter er ansvarlige for at straks at anmelde eventuelle brud på persondatasikkerheden til Datatilsynet. Se vejledning og kontaktoplysninger her:\\{\color{blue}https://www.datatilsynet.dk/anmeld-brud-paa-persondatasikkerheden/}
+
+\subsection*{8. Klager}
+
+8.1 Parterne er hver især ansvarlige for behandlingen af eventuelle klager fra registrere-de, hvis klagerne omhandler overtrædelse af bestemmelser i databeskyttelsesforordningen, for hvilke parten efter denne aftale er ansvarlig.
+
+\subsection*{9. Orientering af den anden part}
+
+9.1 Parterne orienterer hinanden om væsentlige forhold, der har betydning for den fælles behandling og denne aftale.
+
+\subsection*{10. Ikrafttræden og ophør}
+
+10.1 Denne aftale træder i kraft ved begge parters underskrift heraf.
+
+10.2 Aftalen er gældende, så længe de omhandlede oplysninger behandles, eller indtil aftalen afløses af en ny aftale, som fastsætter ansvarsfordelingen i forbindelse med be-handlingen.
+
+
+
+
+\subsection*{Underskrift}
+
+På vegne af \studerendeET
+
+Navn og underskrift~~~\studerendeET
+\vspace{1mm}
+\hrule
+\vspace{5mm}
+Stilling~~~
+\vspace{1mm}
+\hrule
+\vspace{5mm}
+Dato~~~\today
+\vspace{1mm}
+\hrule
+
+\vspace{5mm}
+På vegne af \studerendeTO
+
+Navn og underskrift~~~\studerendeTO
+\vspace{1mm}
+\hrule
+\vspace{5mm}
+Stilling~~~
+\vspace{1mm}
+\hrule
+\vspace{5mm}
+Dato~~~\today
+\vspace{1mm}
+\hrule
+
+
+\vspace{5mm}
+På vegne af \studerendeTRE
+
+Navn og underskrift~~~\studerendeTRE
+\vspace{1mm}
+\hrule
+\vspace{5mm}
+Stilling~~~
+\vspace{1mm}
+\hrule
+\vspace{5mm}
+Dato~~~\today
+\vspace{1mm}
+\hrule
+
+
+\vspace{5mm}
+På vegne af \studerendeFIRE
+
+Navn og underskrift~~~\studerendeFIRE
+\vspace{1mm}
+\hrule
+\vspace{5mm}
+Stilling~~~
+\vspace{1mm}
+\hrule
+\vspace{5mm}
+Dato~~~\today
+\vspace{1mm}
+\hrule
+
+\end{document}
