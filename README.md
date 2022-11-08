@@ -14,3 +14,4 @@ Filerne `Fælles_dataansvar_2p.tex`, `Fælles_dataansvar_3p.tex` og `Fælles_dat
 - [ ] Få AU til at bruge de her template i stedet for deres forfærdelige Word skabeloner
 - [ ] Fælles dataansvar programmeret til at tilpasse layout til antal gruppemedlemmer. 
 - [ ] Variabel-baseret redigering af tabeller i `fortegnelse af behandlingsaktiviteter` og `fælles dataansvar` dokumenter
+- [ ] Dato som variable i tilfælde af at dokumenter skal benyttes på en anden dato end udskriftsdagen.
