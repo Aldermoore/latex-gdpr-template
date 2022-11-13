@@ -15,23 +15,31 @@
 
 \newcommand{\dataansvarligNavn}{ Dataansvarlig }	% Skriv navn på dataansvarlig 
 
-\newcommand{\dataansvarligMail}{ name@example.org }	 				% Skriv mail, eller hold blank hvis der ikke kan kontaktes på mail.  
-\newcommand{\dataansvarligTelefon}{ 12345678 }	 			% Skriv tlf nr, eller hold blank hvis der ikke kan kontaktes på tlf.  
+\newcommand{\dataansvarligMail}{ name@example.org }	% Skriv mail, eller hold blank hvis der ikke kan kontaktes på mail. 
+ 
+\newcommand{\dataansvarligTelefon}{ 12345678 }	 	% Skriv tlf nr, eller hold blank hvis der ikke kan kontaktes på tlf.  
 
-\newcommand{\vejleder}{ }							% Skriv navn på vejleder for kursus/projekt (hvis der er en)
+\newcommand{\vejleder}{ Jens Hansen}				% Skriv navn på vejleder for kursus/projekt (hvis der er en)
 
+\newcommand{\institution}{Aarhus Universitet} 		% Ændr institution til det passende
 
-\newcommand{\institution}{Aarhus Universitet} % Ændr institution til det passende
-
-
-
-
+\newcommand{\dato}{ \today }						% Skriv dato for fortegnelse, eller behold som \today for dags dato
 
 
+% Udfyld nedenstående med oplysninger til tabellen
+\newcommand{\formaal}{Formålet med dataopsamlingen}	% Udfyld med formålet med dataopsamlingen
 
+\newcommand{\personKategorier}{Børn og unge}		% Eksempelvis: Voksne i alderen 40 – 50 år eller børn med spiseforstyrrelser.
 
+\newcommand{\personoplys}{Alder, køn, beskæftigelse}% Eksempelvis: vægt, højde, musiksmag, dialekt, testresultater
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{	\modtagere}{Vejleder og andre}			% Eksempelvis: Aarhus Universitet, studie-administration, underviser og vejleder, ekstern censor
+
+\newcommand{\sletning}{1. august 2020}				% Angiv måned og år for udløb af klagefrist efter forventet tids-punkt for bedømmelse af opga-ven/projektet/specialet. Data kan opbevares indtil en eventuel klagesag er behandlet
+\newcommand{\opbevaring}{Aarhus Universitet's Onedrive instans, der opfylder lovmæssige krav til opbevaring af personfølsomme oplysninger}% Eksempelvis: Aarhus Universitets Onedrive.
+
+%%%%% Nedenfor skal der kun rettes i tabellen nederst %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Imports
 \usepackage{geometry}
@@ -65,7 +73,7 @@ bottom = 3.6cm,
 \textsf{
 \begin{tabular}{l}
 \textbf{\institution}      \\
-\footnotesize{Dato: \today}             \\
+\footnotesize{Dato: \dato}             \\
 \vspace{2mm} \\
 \footnotesize{Side \thepage/\pageref{LastPage}}\\
 ~~
@@ -104,13 +112,13 @@ Uddannelse:~~~\uddannelse
 
 \begin{tabular}{ | l p{0.40\textwidth} | p{0.48\textwidth} | }
 \hline
-1. & Dataansvarlig:\newline Studerendes navn og kontaktoplysninger.  					& \dataansvarligNavn \newline \dataansvarligMail \newline \dataansvarligTelefon \\ \hline  % Hvis flere studerende har ad-gang til data foreligger fælles dataansvar. Udfyld erklæring for fælles ansvar. 
-2. & Formålet med behandling af personoplysninger 								&              \\ \hline
-3. & Kategorier af personer, hvis data indgår i opgaven/projektet/specialet 		&              \\ \hline  % Eksempelvis: Voksne i alderen 40 – 50 år eller børn med spiseforstyrrelser. 
-4. & Kategorier af personoplysninger 											&              \\ \hline  % Eksempelvis: vægt, højde, musiksmag, dialekt, testresultater
-5. & Kategorier af modtagere af personoplysninger 								& \vejleder    \\ \hline  % Eksempelvis: Aarhus Universitet, studie-administration, underviser og vejleder, eks-tern censor
-6. & Tidspunkt for sletning af personoplysningerne 								&              \\ \hline % Angiv måned og år for udløb af klagefrist efter forventet tids-punkt for bedømmelse af opga-ven/projektet/specialet. Data kan opbevares indtil en eventuel klagesag er behandlet
-7. & Til sikker opbevaring vil der blive anvendt følgende program (eller andet) 	&              \\ \hline  % Eksempelvis: Aarhus Universitets Onedrive. 
+1. & Dataansvarlig:\newline Studerendes navn og kontaktoplysninger.  			& \dataansvarligNavn \newline \dataansvarligMail \newline \dataansvarligTelefon \\ \hline  % Hvis flere studerende har ad-gang til data foreligger fælles dataansvar. Udfyld erklæring for fælles ansvar. 
+2. & Formålet med behandling af personoplysninger 								& \formaal     		\\ \hline
+3. & Kategorier af personer, hvis data indgår i opgaven/projektet/specialet 	& \personKategorier	\\ \hline  % Eksempelvis: Voksne i alderen 40 – 50 år eller børn med spiseforstyrrelser. 
+4. & Kategorier af personoplysninger 											& \personoplys  		\\ \hline  % Eksempelvis: vægt, højde, musiksmag, dialekt, testresultater
+5. & Kategorier af modtagere af personoplysninger 								& \modtagere    		\\ \hline  % Eksempelvis: Aarhus Universitet, studie-administration, underviser og vejleder, ekstern censor
+6. & Tidspunkt for sletning af personoplysningerne 								& \sletning 			\\ \hline % Angiv måned og år for udløb af klagefrist efter forventet tids-punkt for bedømmelse af opga-ven/projektet/specialet. Data kan opbevares indtil en eventuel klagesag er behandlet
+7. & Til sikker opbevaring vil der blive anvendt følgende program (eller andet) 	& \opbevaring 		\\ \hline  % Eksempelvis: Aarhus Universitets Onedrive. 
 \end{tabular}%
 
 \end{table}

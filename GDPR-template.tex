@@ -8,17 +8,26 @@
 
 %% Udfyld de nedenstående variabler med den relevante information. Latex vil selv sætte dem ind de rigtige steder, og tilpasse siden så det passer. 
 
-\newcommand{\vejleder}{ Navn på vejleder }			% Skriv navn på vejleder for kursus/projekt
+
+\newcommand{\institution}{Aarhus Universitet} % Ændr institution til det passende
+
+\newcommand{\vejleder}{ Navn på vejleder }				% Skriv navn på vejleder for kursus/projekt
+
 \newcommand{\dataansvarlig}{ Navn på dataansvarlig }	% Skriv navn på den dataansvarlige studerende 
+
 \newcommand{\mail}{ kontakt@dataansvarlig } 			% Skriv email på dataansvarlig eller person der har kontakt-rollen
+
 \newcommand{\opgavetitel}{ Opgavetitel }				% Skriv navn på opgaven
+
+\newcommand{\dato}{ \today }							% Skriv dato for dataindsamlingen, eller behold som \today for dags dato
+
 \newcommand{\opgavebeskrivelse}{
+% Skriv beskrivelsen af projektet og hvilke data der indsamles og til hvilket formål
 
 Beskrivelse af projektet her...
 
 }
 
-\newcommand{\institution}{Aarhus Universitet} % Ændr institution til det passende
 
 
 
@@ -29,7 +38,7 @@ Beskrivelse af projektet her...
 
 
 %%%%% ÆNDR IKKE I DET NEDENSTÅENDE %%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Imports
 \usepackage{geometry}
@@ -63,7 +72,7 @@ bottom = 3.6cm,
 \textsf{
 \begin{tabular}{l}
 \textbf{\institution}      \\
-\footnotesize{Dato: \today}             \\
+\footnotesize{Dato: \dato}             \\
 \vspace{2mm} \\
 \footnotesize{Side \thepage/\pageref{LastPage}}\\
 ~~
